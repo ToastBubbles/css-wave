@@ -1,6 +1,6 @@
 function waves() {
   let container = document.getElementById("wave-container");
-  let waveLength = 10;
+  let waveLength = 100;
 
   let divPrefix = `<div class="waveSeg">0`;
 
@@ -23,7 +23,7 @@ function myLoop() {
     // );
     document.querySelectorAll(`.waveSeg`)[i].classList.add("animateWave");
     i++;
-    if (i < 10) {
+    if (i < 100) {
       myLoop();
     }
   }, 100);
