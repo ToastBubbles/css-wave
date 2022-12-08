@@ -4,28 +4,30 @@
 
 @keyframes waves {
   0% {
-    transform: rotate(-3deg);
+    transform: rotate(-10deg);
   }
   50% {
     /* transform: translate(0px, 10px); */
-    transform: rotate(3deg);
+    transform: rotate(10deg);
   }
   100% {
-    transform: rotate(-3deg);
+    transform: rotate(-10deg);
   }
 }
 
 .waveSeg {
   position: absolute;
-  height: 40px;
-  width: 40px;
+  height: 20px;
+  width: 20px;
   background-color: blue;
-  border-radius: 40px;
-  left: 40px;
+  border-radius: 20px;
+  left: 20px;
   display: inline-block;
 
-  animation: waves 3s infinite;
   text-indent: -9999px;
   white-space: nowrap;
 }
-//
+
+.animateWave {
+  animation: waves 3s infinite;
+}
